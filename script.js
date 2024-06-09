@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1}    
         slides[slideIndex-1].style.display = "block";  
-        setTimeout(showSlides, 3000); // Muda de slide a cada 3 segundos
+        setTimeout(showSlides, 3000); 
     }
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
 });
