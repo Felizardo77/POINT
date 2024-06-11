@@ -10,11 +10,12 @@ body {
     font-family: "Sequel Sans", "Poppins", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--cor5);
     color: #333;
 }
 
 header {
+    
     background-color: var(--cor5);
     padding: 1rem 0;
     position: relative;
@@ -46,7 +47,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #333;
     font-weight: light;
     position: relative;
     transition: color 0.3s ease;
@@ -60,7 +61,7 @@ nav ul li a::after {
     display: block;
     margin-top: 5px;
     right: 0;
-    background: white;
+    background: var(--cor2);
     transition: width 0.3s ease;
     transition-delay: 0.1s;
 }
@@ -68,11 +69,11 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
     left: 0;
-    background: white;
+    background: var(--cor2);
 }
 
 nav ul li a:hover {
-    color: #e0f7fa;
+    color: #114a6d;
 }
 
 .menu-toggle {
@@ -169,8 +170,8 @@ main {
 }
 
 footer {
-    background-color: #2a9d8f;
-    color: white;
+    background-color: var(--cor5);
+    color: var(--cor2);
     text-align: center;
     padding: 1rem 0;
 }
