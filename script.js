@@ -10,13 +10,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
         slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1}    
         slides[slideIndex-1].style.display = "block";  
-        setTimeout(showSlides, 3000); 
+        setTimeout(showSlides, 3000); // Muda de slide a cada 3 segundos
     }
 
     const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
+    const navPopup = document.getElementById('nav-popup');
     
     menuToggle.addEventListener('click', () => {
-        menu.classList.toggle('show');
+        navPopup.classList.toggle('show');
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            navPopup.classList.remove('show');
+        }
     });
 });
