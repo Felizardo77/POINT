@@ -248,6 +248,7 @@ footer {
     #servicos {
         height: auto;
         padding: 2rem 1rem;
+        font-size: 1em;
     }
 
     .servico-container {
@@ -261,5 +262,6 @@ footer {
 
     .servico-text {
         margin-bottom: 1rem;
+        width: 90%;
     }
 }
