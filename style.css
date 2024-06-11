@@ -1,3 +1,11 @@
+*{
+    --cor1:#165F8C;
+    --cor2:#105773;
+    --cor3:#9DBF21;
+    --cor4:#C1D96C;
+    --cor5:#F2F2F2;
+}
+
 body {
     font-family: "Sequel Sans", "Poppins", Arial, sans-serif;
     margin: 0;
@@ -7,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #312d81;
+    background-color: var(--cor5);
     padding: 1rem 0;
     position: relative;
     z-index: 10;
@@ -112,7 +120,7 @@ main {
 #slideshow {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     overflow: hidden;
     margin: 0;
 }
