@@ -14,8 +14,15 @@ body {
     color: #333;
 }
 
+.servico-container h3{
+    color: var(--cor3);
+}
+
+h1, h2, h3, h4{
+    color: var(--cor2);
+}
+
 header {
-    
     background-color: var(--cor5);
     padding: 1rem 0;
     position: relative;
@@ -182,7 +189,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e9ecef;
+    background-color: #e1fb84;
     color: white;
     overflow: hidden;
 }
@@ -190,7 +197,7 @@ footer {
 .servico-container {
     position: relative;
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,12 +217,83 @@ footer {
     top: 0;
     left: 0;
     z-index: 0;
+    margin-top: 30px;
+}
+
+#sobre-nos{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#contactos{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #background-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#pArt:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 85, 255, 0.2);
+}
+
+#nMil:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 123, 22, 0.2);
+}
+
+#mImov:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 136, 9, 0.2);
+}
+
+.card:hover h4{
+    color: var(--cor3);
+}
+
+.card-logo {
+    width: 90px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.card h4 {
+    margin: 0.5rem 0;
+    color: var(--cor2);
+}
+
+.card p {
+    color: #666;
 }
 
 @media (max-width: 768px) {
@@ -238,7 +316,7 @@ footer {
     }
 
     nav .logo {
-        height: 40px;
+        height: 50px;
     }
 
     #nav-popup.show {
@@ -262,6 +340,15 @@ footer {
 
     .servico-text {
         margin-bottom: 1rem;
+        width: 90%;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
         width: 90%;
     }
 }
