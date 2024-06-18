@@ -9,12 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function showSlides(n) {
         let i;
         let slides = document.getElementsByClassName("slide");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
+        if (n > slides.length) { 
+            clearInterval(slideInterval);  // Pare o slideshow quando chegar ao último slide
+            slideIndex = slides.length;
+        } 
+        if (n < 1) { 
+            slideIndex = slides.length;
+        }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        slides[slideIndex - 1].style.display = "block";
+        slides[slideIndex - 1].style.display = "flex";  // Use 'flex' para garantir que o display funcione corretamente
     }
 
     document.querySelector('.prev').addEventListener('click', () => {
@@ -44,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    setInterval(() => {
+    const slideInterval = setInterval(() => {
         plusSlides(1);
-    }, 8000);
+    }, 3000);
 });
