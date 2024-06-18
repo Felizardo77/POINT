@@ -46,5 +46,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(() => {
         plusSlides(1);
-    }, 3000);
+    }, 8000);
 });
