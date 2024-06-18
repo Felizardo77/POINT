@@ -1,21 +1,33 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    let slideIndex = 0;
-    showSlides();
+document.addEventListener('DOMContentLoaded', () => {
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-    function showSlides() {
-        let slides = document.getElementsByClassName("slide");
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        slides[slideIndex-1].style.display = "block";  
-        setTimeout(showSlides, 3000); // Muda de slide a cada 3 segundos
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
     }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+
+    document.querySelector('.prev').addEventListener('click', () => {
+        plusSlides(-1);
+    });
+
+    document.querySelector('.next').addEventListener('click', () => {
+        plusSlides(1);
+    });
 
     const menuToggle = document.getElementById('menu-toggle');
     const navPopup = document.getElementById('nav-popup');
-    
+
     menuToggle.addEventListener('click', () => {
         navPopup.classList.toggle('show');
     });
@@ -25,4 +37,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
             navPopup.classList.remove('show');
         }
     });
+
+    document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('expanded');
+        });
+    });
+
+    setInterval(() => {
+        plusSlides(1);
+    }, 3000);
 });
