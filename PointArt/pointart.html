@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+    <title>Point Art - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../Media/images/favicon-32x32.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../Media/images/logo3.png" alt="Point Grupo" class="logo">
+            <div class="menu-toggle" id="menu-toggle">
+                <img src="../Media/images/menu-hamburguer.png" alt="Menu Icon" class="menu-icon">
+            </div>
+            <ul id="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+        </nav>
+        <div id="nav-popup" class="nav-popup">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="slideshow">
+            <div class="slide" style="background-image: url('../Media/images/slide1.jpg');">
+                <div class="overlay"></div>
+                <div class="text">Bem Vindo à Point Art</div>
+            </div>
+            <div class="slide" style="background-image: url('../Media/images/slide2.jpg');">
+                <div class="overlay"></div>
+                <div class="text">Gráfica, Publicidade, Serigrafia e Confecções</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+        <section id="servicos">
+            <h2 class="titles">Nossos Serviços</h2>
+            <div class="servico-container">
+                <div class="servico-text">
+                    <h3 class="titles">Gráfica</h3>
+                    <p>Serviços de impressão de alta qualidade para diversas necessidades.</p>
+                    <h3 class="titles">Publicidade</h3>
+                    <p>Criação de campanhas publicitárias inovadoras e eficazes.</p>
+                    <h3 class="titles">Serigrafia</h3>
+                    <p>Especialistas em impressão de tela para personalização de produtos.</p>
+                    <h3 class="titles">Confecções</h3>
+                    <p>Produção de materiais têxteis personalizados para diversas finalidades.</p>
+                </div>
+                <div class="servico-video">
+                    <video autoplay muted loop id="background-video">
+                        <source src="../Media/video/negocios.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2 class="titles">Portfólio</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="../Media/images/portifolio1.jpg" alt="Portfólio 1" class="card-logo">
+                    <h4>Projeto 1</h4>
+                    <p>Descrição do projeto 1.</p>
+                </div>
+                <div class="card">
+                    <img src="../Media/images/portifolio2.jpg" alt="Portfólio 2" class="card-logo">
+                    <h4>Projeto 2</h4>
+                    <p>Descrição do projeto 2.</p>
+                </div>
+                <div class="card">
+                    <img src="../Media/images/portifolio3.jpg" alt="Portfólio 3" class="card-logo">
+                    <h4>Projeto 3</h4>
+                    <p>Descrição do projeto 3.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contactos">
+            <h2 class="titles">Contactos</h2>
+            <p>Email: info@pointart.com</p>
+            <p>Telefone: (00) 1234-5678</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Point Art. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

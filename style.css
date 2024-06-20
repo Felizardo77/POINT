@@ -1,4 +1,40 @@
-/* Estilos gerais */
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('Fonts/bebas/Bebas-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'franchise';
+    src: url('fonts/franchise_2/Franchise.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe';
+    src: url('Fonts/louis_george_cafe/Louis\ George\ Cafe.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sequel';
+    src: url('Fonts/Sequel_Sans/Sequel_Sans/Sequel Sans/Sequel\ Sans\ Bold\ Disp.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'southland';
+    src: url('fonts/southland/Southland\ TTF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     --cor1: #165F8C;
     --cor2: #105773;
@@ -9,8 +45,7 @@
 }
 
 body {
-    /* font-family: "Sequel", "Poppins", Arial, sans-serif; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Cafe","Poppins", Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--cor5);
@@ -140,7 +175,24 @@ main {
     background-repeat: no-repeat;
 }
 
+
 .slide .text {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    text-align: center;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#lastSlide .text{
     position: absolute;
     top: 50%;
     left: 20%;
@@ -151,6 +203,8 @@ main {
     z-index: 1;
     text-align: left;
     max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text.marketing h2 {
@@ -209,6 +263,10 @@ footer {
     padding: 1rem 0;
 }
 
+.titles{
+    font-weight: bolder;
+}
+
 #servicos {
     position: relative;
     height: 100vh;
@@ -259,6 +317,7 @@ footer {
 
 #contactos {
     width: 90%;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -312,6 +371,8 @@ footer {
     width: 90px;
     height: auto;
     margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card h4 {
