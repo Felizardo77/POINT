@@ -9,7 +9,8 @@
 }
 
 body {
-    font-family: "Sequel", "Poppins", Arial, sans-serif;
+    /* font-family: "Sequel", "Poppins", Arial, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--cor5);
@@ -232,7 +233,8 @@ footer {
     position: relative;
     z-index: 1;
     padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #00000085;
+    border-radius: 20px;
 }
 
 .servico-video {
@@ -249,6 +251,10 @@ footer {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#pointGroup-h2{
+    margin-top: 1.5rem;
 }
 
 #contactos {
@@ -325,6 +331,10 @@ footer {
 
 .card.expanded .card-details {
     display: block;
+}
+
+#ourServices{
+    margin-left: .8rem;
 }
 
 @media (max-width: 768px) {
