@@ -33,21 +33,28 @@
         </div>
     </header>
     <main>
-        <section id="slideshow">
-            <div class="slide" style="background-image: url('../Media/images/slide1.jpg');">
-                <div class="overlay"></div>
-                <div class="text">Bem Vindo à Point Art</div>
+        <div id="slideshow">
+            <div class="slide">
+                <img src="../Media/images/art1.jpg" alt="Image 1">
+                <div class="caption">Bem-vindo à PointArt - Sua solução criativa</div>
             </div>
-            <div class="slide" style="background-image: url('../Media/images/slide2.jpg');">
-                <div class="overlay"></div>
-                <div class="text">Gráfica, Publicidade, Serigrafia e Confecções</div>
+            <div class="slide">
+                <img src="../Media/images/art2.jpg" alt="Image 2">
+                <div class="caption">Transformamos suas ideias em realidade</div>
+            </div>
+            <div class="slide">
+                <img src="../Media/images/art3.jpg" alt="Image 3">
+                <div class="caption">Excelência em impressão e design gráfico</div>
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </section>
+        </div>            
         <section id="servicos">
-            <h2 class="titles">Nossos Serviços</h2>
-            <div class="servico-container">
+            <video id="background-video" autoplay loop muted>
+                <source src="../Media/video/arte.mp4" type="video/mp4">
+            </video>
+            <div class="servico-content">
+                <h2 class="titles">Nossos Serviços</h2>
                 <div class="servico-text">
                     <h3 class="titles">Gráfica</h3>
                     <p>Serviços de impressão de alta qualidade para diversas necessidades.</p>
@@ -58,15 +65,8 @@
                     <h3 class="titles">Confecções</h3>
                     <p>Produção de materiais têxteis personalizados para diversas finalidades.</p>
                 </div>
-                <div class="servico-video">
-                    <video autoplay muted loop id="background-video">
-                        <source src="../Media/video/negocios.mp4" type="video/mp4">
-                        Seu navegador não suporta o elemento de vídeo.
-                    </video>
-                    <div class="overlay"></div>
-                </div>
             </div>
-        </section>
+        </section>        
         <section id="portfolio">
             <h2 class="titles">Portfólio</h2>
             <div class="cards-container">
