@@ -152,11 +152,13 @@ nav ul li a:hover {
 }
 
 .titles {
-    font-family: "Bebas Neue", "Poppins", Arial, sans-serif;
+    font-family: "Cafe", "Poppins", Arial, sans-serif;
+    font-size: 1.2em;
     text-transform: uppercase;
     color: var(--cor2);
     margin-bottom: 1rem;
     text-align: center;
+    color: white;
 }
 
 #slideshow {
@@ -244,6 +246,16 @@ nav ul li a:hover {
     height: 100%;
 }
 
+.servico-text{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #9eb0b75b;
+    padding: 20px;
+    border-radius: 20px;
+}
+
 #portfolio, #contactos {
     padding: 2rem;
     text-align: center;
@@ -305,6 +317,10 @@ nav ul li a:hover {
     background-color: var(--cor4);
     color: var(--cor2);
     text-align: center;
+}
+
+.titles{
+    color: #00c3ff;
 }
 
 footer {
