@@ -251,7 +251,7 @@ nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: #9eb0b75b;
+    background-color: #00a64277;
     padding: 20px;
     border-radius: 20px;
 }
@@ -287,7 +287,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .card {
@@ -298,6 +298,10 @@ nav ul li a:hover {
     flex: 1 1 30%;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-title{
+    margin-top: 10px;
 }
 
 .card:hover {
@@ -320,7 +324,11 @@ nav ul li a:hover {
 }
 
 .titles{
-    color: #00c3ff;
+    color: #baefff;
+}
+
+.card h4{
+    color: #333;
 }
 
 footer {
@@ -353,6 +361,8 @@ footer {
     .servico-video, .servico-text {
         width: 100%;
     }
+
+    
 }
 
 @media (min-width: 768px) {
@@ -362,5 +372,17 @@ footer {
 
     .servico-video, .servico-text {
         width: 50%;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 1rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #000;
+        align-items: center;
     }
 }
