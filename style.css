@@ -343,9 +343,13 @@ footer {
     flex-direction: row;
     height: 70vh;
     background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     padding: 50px;
     border-radius: 15px;
     margin-bottom: 30px;
+    
 }
 
 .logoPoint{
@@ -555,7 +559,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 715px) {
     .pointGroup {
         display: block;
         height: 70vh;
@@ -563,10 +567,13 @@ footer {
         padding: 50px;
         border-radius: 15px;
         margin-bottom: 30px;
+        margin-top: -30px;
         position: relative;
+        width: 100%;
     }
 
     .pointGroup #pointGroup-h2 {
+        margin-top: -5px;
         position: relative;
         z-index: 10;
         background-color: rgba(255, 255, 255, 0.7); 
@@ -597,4 +604,28 @@ footer {
         height: 100%;
         object-fit: cover;
     }
+}
+
+@media (max-width: 418px) {
+   
+    .pointGroup #pointGroup-h2 {
+        margin-top: -5px;
+        position: relative;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.7); 
+        padding: 20px; 
+        border-radius: 10px; 
+        margin-top: -20px;
+    }
+
+    .pointGroup .textPoint {
+        position: relative;
+        z-index: 10;
+        color: #000; 
+        background-color: rgba(255, 255, 255, 0.7); 
+        padding: 20px; 
+        border-radius: 10px; 
+        
+    }
+
 }
