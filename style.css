@@ -760,12 +760,12 @@ footer {
 @media (max-width: 460px) {
     
     .text h2{
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
     
     .text p{
         color: #eaeaea;
-        font-size: 0.5em;
+        font-size: 0.6em;
     }
     
     #lastSlide .text{
@@ -773,11 +773,11 @@ footer {
     }
     
     .text.marketing h2 {
-        font-size: 0.9em;
+        font-size: 1em;
     }
     
     .text.marketing p {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
     
     .text .btn {
