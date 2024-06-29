@@ -9,28 +9,28 @@
 
 @font-face {
     font-family: 'franchise';
-    src: url('fonts/franchise_2/Franchise.ttf') format('truetype');
+    src: url('../Fonts/franchise_2/Franchise.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Cafe';
-    src: url('Fonts/louis_george_cafe/Louis George Cafe.ttf') format('truetype');
+    src: url('../Fonts/louis_george_cafe/Louis George Cafe.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sequel';
-    src: url('Fonts/Sequel_Sans/Sequel_Sans/Sequel Sans/Sequel Sans Bold Disp.ttf') format('truetype');
+    src: url('../Fonts/Sequel_Sans/Sequel_Sans/Sequel Sans/Sequel Sans Bold Disp.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'southland';
-    src: url('fonts/southland/Southland TTF.ttf') format('truetype');
+    src: url('../Fonts/southland/Southland TTF.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -45,7 +45,7 @@
 }
 
 body {
-    font-family: "Cafe", "Poppins", Arial, sans-serif;
+    font-family: "Robotto","Poppins", Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--cor5);
@@ -149,6 +149,36 @@ nav ul li a:hover {
     color: #333;
     font-weight: light;
     font-size: 1.2rem;
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+}
+
+.apresentacao-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-presentation{
+    width: 50%;
+    margin-left: 9px;
+    margin-right: 15px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.apresentacao-title{
+    font-family: 'Sequel';
+    font-weight: bolder;
+    font-size: 3.2em; 
+}
+
+.apresentacao-text{
+    font-size: 1.7em;
 }
 
 .titles {
@@ -318,7 +348,6 @@ nav ul li a:hover {
 
 #contactos {
     padding: 3rem 1rem;
-    background-color: var(--cor4);
     color: var(--cor2);
     text-align: center;
 }
@@ -360,9 +389,7 @@ footer {
 
     .servico-video, .servico-text {
         width: 100%;
-    }
-
-    
+    }  
 }
 
 @media (min-width: 768px) {

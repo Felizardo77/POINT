@@ -95,7 +95,7 @@ nav {
 }
 
 nav .logo {
-    height: 80px;
+    height: 100px;
     transition: height 0.3s ease;
 }
 
@@ -164,18 +164,30 @@ nav ul li a:hover {
 
 #nav-popup ul {
     list-style-type: none;
-    margin: 0;
+    padding: 0;
+}
+
+#nav-popup ul {
+    list-style-type: none;
     padding: 0;
 }
 
 #nav-popup ul li {
-    margin: 1rem 0;
+    margin: 5px 0;
 }
 
 #nav-popup ul li a {
+    display: block;
     text-decoration: none;
-    color: #333;
-    font-size: 1.2rem;
+    color: #000;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#nav-popup ul li a:hover {
+    background-color: var(--cor2);
+    color: #fff; 
 }
 
 main {
@@ -186,7 +198,7 @@ main {
 #slideshow {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     overflow: hidden;
     margin: 0;
 }
@@ -207,17 +219,26 @@ main {
 .slide .text {
     position: absolute;
     top: 50%;
-    left: 28%;
     transform: translateY(-50%);
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 1;
-    text-align: center;
+    text-align: justify;
     max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    
+    background-color: rgba(0, 0, 0, 0.43);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text h2{
+    text-align: left;
+    font-size: 2.2em;
+    font-weight: bolder;
+}
+
+.text p{
+    color: #eaeaea;
 }
 
 #lastSlide .text{
@@ -225,7 +246,6 @@ main {
     top: 50%;
     left: 20%;
     transform: translateY(-50%);
-    font-size: 2rem;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 1;
@@ -233,16 +253,21 @@ main {
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 2.1em;
+    font-weight: bolder;
 }
 
 .text.marketing h2 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
+    font-weight: bolder;
 }
 
 .text.marketing p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin-bottom: 1.5rem;
+    font-weight: lighter;
+    color: #eaeaea;
 }
 
 .text .btn {
@@ -266,13 +291,16 @@ main {
     top: 50%;
     width: auto;
     padding: 16px;
-    margin-top: -22px;
+    margin-top: auto;
+    margin-bottom: auto;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    font-size: 2.1em;
+    text-decoration: none;
 }
 
 .next {
@@ -304,11 +332,15 @@ footer {
     color: white;
     overflow: hidden;
     margin-bottom: 30px;
-    background-color: #2fd2ffa3;
+    background-image: url(Media/images/art13.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 
 #ourServices{
     color: white;
+    font-size: 2.2em;
+    font-weight: bolder;
 }
 
 .servico-container {
@@ -320,12 +352,21 @@ footer {
     justify-content: center;
 }
 
+.servico-container h3{
+    font-size: 2.1em;
+}
+
 .servico-text {
     position: relative;
     z-index: 1;
     padding: 2rem;
     background-color: #00000085;
     border-radius: 20px;
+    font-size: 1.5em;
+}
+
+.servico-text p{
+    color: #eaeaea;
 }
 
 .servico-video {
@@ -468,6 +509,37 @@ footer {
     margin-left: .8rem;
 }
 
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
+
+.slide .text {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+.slide.active .text {
+    opacity: 1;
+    animation: fadeInUp 1s forwards;
+}
+
+
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -557,6 +629,8 @@ footer {
         max-width: 80%;
     }
 }
+
+
 
 
 @media (max-width: 715px) {
