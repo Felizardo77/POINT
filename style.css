@@ -610,7 +610,8 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    
+    height: 100vh;
+    width: 100%;
 }
 
 .pointGroup {
@@ -736,11 +737,11 @@ footer {
     }
     
     .pointGroup .textPoint {
-        font-size:0.8em;
+        font-size:0.9em;
     }
     
     .pointGroup #textPoint3 { 
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
     
     .text h2{
@@ -787,24 +788,34 @@ footer {
     
     .servico-text {
         font-size: 1em;
+        margin-left: 15px;
     }
     
+    
+}
+
+@media (max-width: 608px) {
+
+    .pointGroup #pointGroup-h2 {
+        font-size: 2.1em;
+    }
+    
+    .pointGroup .textPoint {
+        font-size:0.8em;
+    }
+    
+    .pointGroup #textPoint3 { 
+        font-size: 0.8em;
+    }
+
 }
 
 @media (max-width: 553px) {
     
     .pointGroup #pointGroup-h2 {
-        font-size: 1.8em;
+        font-size: 1.7em;
+        margin-bottom: -2px;
     }
-        
-    .pointGroup .textPoint {
-        font-size:0.5em;
-    }
-        
-    .pointGroup #textPoint3 { 
-        font-size: 0.5em;
-    }
-    
     
     .text h2{
         font-size: 0.8em;
@@ -845,7 +856,44 @@ footer {
     
     .servico-text {
         font-size: 0.7em;
+        margin-left: 15px;
     }
 }
 
+@media (max-width:470px) {
+    .pointGroup #pointGroup-h2 {
+        font-size: 1.7em;
+        margin-bottom: -3px;
+    }
+        
+    .pointGroup .textPoint {
+        font-size:0.75em;
+        margin-bottom: -5px;
+    }
+        
+    .pointGroup #textPoint3 { 
+        font-size: 0.75em;
+    }
 
+    .servico-video video {
+        border-radius: 20px 0px 0px 20px;
+    }
+}
+
+@media (max-width:425px) {
+    .pointGroup #pointGroup-h2 {
+        font-size: 1.4em;
+        margin-bottom: -4px;
+        padding: 10px;
+    }
+        
+    .pointGroup .textPoint {
+        font-size:0.68em;
+        margin-bottom: -5px;
+        padding: 10px;
+    }
+        
+    .pointGroup #textPoint3 { 
+        font-size: 0.68em;
+    }
+}
