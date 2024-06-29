@@ -567,7 +567,7 @@ footer {
     animation: fadeInUp 1s forwards;
 }
 
-@keyframes fadeInUp {
+@keyframes fadeInUp2 {
     0% {
         opacity: 0;
         transform: translateY(20px);
@@ -589,7 +589,7 @@ footer {
 
 .pointGroup .titles {
     opacity: 0;
-    animation: fadeInUp 1s forwards;
+    animation: fadeInUp2 1s forwards;
     animation-delay: 0.5s;
 }
 
@@ -609,13 +609,18 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    
 }
 
-/* Ajustes adicionais para melhorar a experiência em dispositivos móveis */
-@media (max-width: 768px) {
-    .pointGroup {
-        background-attachment: scroll;
-    }
+.pointGroup {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.pointGroup.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 

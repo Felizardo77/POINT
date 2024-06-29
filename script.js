@@ -1,4 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const pointGroups = document.querySelectorAll('.pointGroup');
+    
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    pointGroups.forEach(pointGroup => {
+        observer.observe(pointGroup);
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
     let slideIndex = 1;
     showSlides(slideIndex);
 
