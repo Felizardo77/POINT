@@ -354,7 +354,7 @@ footer {
 }
 
 .servico-container h3{
-    font-size: 2.1em;
+    font-size: 1.3em;
 }
 
 .servico-text {
@@ -363,7 +363,7 @@ footer {
     padding: 2rem;
     background-color: #00000085;
     border-radius: 20px;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .servico-text p{
@@ -380,41 +380,68 @@ footer {
     margin-top: 30px;
 }
 
-.pointGroup{
-    display: flex;
-    flex-direction: row;
-    height: 70vh;
+.pointGroup {
+    display: block;
+    height: 100vh;
     background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
     padding: 50px;
     border-radius: 15px;
     margin-bottom: 30px;
-    
+    margin-top: -30px;
+    position: relative;
+    width: 100%;
 }
 
-.logoPoint{
+.pointGroup #pointGroup-h2 {
+    font-family: 'Sequel';
+    margin-top: -5px;
+    position: relative;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 20px; 
+    border-radius: 10px; 
+    color: var(--cor1);
+    font-size: 2.7em;
+    text-align: center;
+}
+
+.pointGroup .textPoint {
+    font-family: 'Sequel';
+    position: relative;
+    z-index: 10;
+    color: #000; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 20px; 
+    border-radius: 10px; 
+    font-size: 1.1em;
+    text-align: left;
+    color: var(--cor2);
+}
+
+
+
+.pointGroup #textPoint3 {
+    font-family: 'Sequel';
+    position: relative;
+    z-index: 10;
+    color: #ffffff;    
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.logoPoint {
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
-.logoPoint img{
+.logoPoint img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.pointGroup p{
-    font-size: 1.4em;
-}
-
-#pointGroup-h2{
-    font-weight: bolder;
-    color: var(--cor2);
-    font-weight: bolder;
-    font-size: 3.2em;
-    font-family: 'Sequel';
 }
 
 #sobre-nos {
@@ -540,6 +567,40 @@ footer {
     animation: fadeInUp 1s forwards;
 }
 
+@media (max-width: 1002px) {
+
+    
+    .pointGroup #pointGroup-h2 {
+        font-size: 2.5em;
+    }
+    
+    .pointGroup .textPoint {
+        font-size: 1em;
+    }
+    
+    .pointGroup #textPoint3 { 
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width: 832px) {
+
+    
+    .pointGroup #pointGroup-h2 {
+        font-size: 2.1em;
+    }
+    
+    .pointGroup .textPoint {
+        font-size:0.9em;
+    }
+    
+    .pointGroup #textPoint3 { 
+        font-size: 0.9em;
+    }
+
+}
+
 
 @media (max-width: 768px) {
     nav ul {
@@ -574,30 +635,6 @@ footer {
         font-size: 1em;
     }
 
-    .pointGroup{
-        display: flex;
-        flex-direction: row;
-        height: 70vh;
-        background-color: white;
-        padding: 50px;
-        border-radius: 15px;
-        margin-bottom: 30px;
-    }
-    
-    .logoPoint{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .logoPoint img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .pointGroup p{
-        font-size: 1.4em;
-    }
     .servico-container {
         flex-direction: column;
     }
@@ -633,81 +670,19 @@ footer {
 
 
 
-
-@media (max-width: 715px) {
-    .pointGroup {
-        display: block;
-        height: 70vh;
-        background-color: white;
-        padding: 50px;
-        border-radius: 15px;
-        margin-bottom: 30px;
-        margin-top: -30px;
-        position: relative;
-        width: 100%;
-    }
-
-    .pointGroup #pointGroup-h2 {
-        margin-top: -5px;
-        position: relative;
-        z-index: 10;
-        background-color: rgba(255, 255, 255, 0.7); 
-        padding: 20px; 
-        border-radius: 10px; 
-    }
-
-    .pointGroup .textPoint {
-        position: relative;
-        z-index: 10;
-        color: #000; 
-        background-color: rgba(255, 255, 255, 0.7); 
-        padding: 20px; 
-        border-radius: 10px; 
-    }
-
-    .logoPoint {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 5;
-    }
-
-    .logoPoint img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-}
-
-@media (max-width: 418px) {
-   
-    .pointGroup #pointGroup-h2 {
-        margin-top: -5px;
-        position: relative;
-        z-index: 10;
-        background-color: rgba(255, 255, 255, 0.7); 
-        padding: 20px; 
-        border-radius: 10px; 
-        margin-top: -20px;
-        font-size: 1.8em;
-    }
-
-    .pointGroup .textPoint {
-        position: relative;
-        z-index: 10;
-        color: #000; 
-        background-color: rgba(255, 255, 255, 0.7); 
-        padding: 20px; 
-        border-radius: 10px; 
-        font-size: 1.1em;
-    }
-
-}
-
 @media (max-width: 771px) {
+
+    .pointGroup #pointGroup-h2 {
+        font-size: 2.1em;
+    }
+    
+    .pointGroup .textPoint {
+        font-size:0.8em;
+    }
+    
+    .pointGroup #textPoint3 { 
+        font-size: 0.8em;
+    }
     
     .text h2{
         text-align: left;
@@ -757,7 +732,20 @@ footer {
     
 }
 
-@media (max-width: 460px) {
+@media (max-width: 553px) {
+    
+    .pointGroup #pointGroup-h2 {
+        font-size: 1.8em;
+    }
+        
+    .pointGroup .textPoint {
+        font-size:0.5em;
+    }
+        
+    .pointGroup #textPoint3 { 
+        font-size: 0.5em;
+    }
+    
     
     .text h2{
         font-size: 0.8em;
@@ -800,3 +788,5 @@ footer {
         font-size: 0.7em;
     }
 }
+
+
