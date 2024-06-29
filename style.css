@@ -567,6 +567,7 @@ footer {
     animation: fadeInUp 1s forwards;
 }
 
+
 @keyframes fadeInUp2 {
     0% {
         opacity: 0;
