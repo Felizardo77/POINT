@@ -710,7 +710,7 @@ footer {
 
     .servico-text {
         margin-bottom: 1rem;
-        width: 90%;
+        width: 100%;
     }
 
     .cards-container {
@@ -814,7 +814,6 @@ footer {
     
     .pointGroup #pointGroup-h2 {
         font-size: 1.7em;
-        margin-bottom: -2px;
     }
     
     .text h2{
@@ -823,7 +822,7 @@ footer {
     
     .text p{
         color: #eaeaea;
-        font-size: 0.6em;
+        font-size: 0.58em;
     }
     
     #lastSlide .text{
@@ -860,7 +859,7 @@ footer {
     }
 }
 
-@media (max-width:470px) {
+@media (max-width:490px) {
     .pointGroup #pointGroup-h2 {
         font-size: 1.7em;
         margin-bottom: -3px;
@@ -895,5 +894,23 @@ footer {
         
     .pointGroup #textPoint3 { 
         font-size: 0.68em;
+    }
+}
+
+@media (max-width:309px) {
+    .pointGroup #pointGroup-h2 {
+        font-size: 1.2em;
+        margin-bottom: -4px;
+        padding: 10px;
+    }
+        
+    .pointGroup .textPoint {
+        font-size:0.58em;
+        margin-bottom: -5px;
+        padding: 10px;
+    }
+        
+    .pointGroup #textPoint3 { 
+        font-size: 0.58em;
     }
 }
