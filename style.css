@@ -862,12 +862,10 @@ footer {
 @media (max-width:490px) {
     .pointGroup #pointGroup-h2 {
         font-size: 1.7em;
-        margin-bottom: -3px;
     }
         
     .pointGroup .textPoint {
         font-size:0.75em;
-        margin-bottom: -5px;
     }
         
     .pointGroup #textPoint3 { 
@@ -882,35 +880,64 @@ footer {
 @media (max-width:425px) {
     .pointGroup #pointGroup-h2 {
         font-size: 1.4em;
-        margin-bottom: -4px;
         padding: 10px;
     }
         
     .pointGroup .textPoint {
-        font-size:0.68em;
-        margin-bottom: -5px;
+        font-size:0.61em;
         padding: 10px;
     }
         
     .pointGroup #textPoint3 { 
-        font-size: 0.68em;
+        font-size: 0.61em;
     }
 }
 
-@media (max-width:309px) {
+@media (max-width:330px) {
     .pointGroup #pointGroup-h2 {
         font-size: 1.2em;
-        margin-bottom: -4px;
         padding: 10px;
     }
         
     .pointGroup .textPoint {
-        font-size:0.58em;
-        margin-bottom: -5px;
+        font-size:0.55em;
         padding: 10px;
     }
         
     .pointGroup #textPoint3 { 
-        font-size: 0.58em;
+        font-size: 0.55em;
     }
 }
+
+@media (max-width:290px) {
+    .pointGroup #pointGroup-h2 {
+        margin-top: -25px;
+        font-size: 1em;
+        padding: 5px;
+    }
+        
+    .pointGroup .textPoint {
+        font-size:0.52em;
+        padding: 5px;
+    }
+        
+    .pointGroup #textPoint3 { 
+        font-size: 0.53em;
+    }
+}
+
+@media (max-width:245px) {
+    .pointGroup #pointGroup-h2 {
+        font-size: 0.7em;
+    }
+        
+    .pointGroup .textPoint {
+        font-size:0.48em;
+    }
+        
+    .pointGroup #textPoint3 { 
+        font-size: 0.48em;
+    }
+}
+
+

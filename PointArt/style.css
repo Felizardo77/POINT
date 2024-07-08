@@ -164,6 +164,7 @@ nav ul li a:hover {
 }
 
 .text-presentation {
+    font-size: 1.5em;
     width: 50%;
     position: absolute;
     text-align: justify;
@@ -174,14 +175,23 @@ nav ul li a:hover {
 
 .apresentacao-title{
     font-weight: bolder;
+    font-size: 1.7em;
 }
 
-.apresentacao button{
+.apresentacao a{
     padding: 15px;
     background-color: var(--cor4);
     color: var(--cor2);
     border-radius: 10px;
     border: none;
+    font-size: 0.77em;
+    color: var(--cor2);
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.apresentacao a:hover{
+    background-color: var(--cor3);
 }
 
 .mission {
@@ -191,18 +201,35 @@ nav ul li a:hover {
     padding: 2rem;
 }
 
+.mission-image{
+    width: 50%;
+}
+
 .mission-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
 .cards{
+    width: 50%;
     display: flex;
+    flex-direction: row;
 }
 
 .text-mission {
     padding-left: 2rem;
+    padding: 15px;
     color: var(--cor2);
+    width: 50%;
+    text-align: justify;
+    background-color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.133);
+    margin-left: 2rem;
+    transition: 0.5s;
+}
+
+.text-mission:hover {
+    box-shadow: 0px 0px 8px #27acff80;
 }
 
 #portfolio, #contactos {
@@ -224,6 +251,30 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 982px) {
+    .cards{
+        flex-direction: column;
+        font-size: 0.8em;
+    }
+    
+    .text-mission {
+        width: 60%;
+        margin-left: 6.5rem;
+        margin-top: 1.2em;
+    }
+}
+
+@media (max-width:780px){
+    .cards{
+        font-size: 0.57em;
+    }
+
+    .text-mission {
+        margin-left: 4.5rem;
+        margin-top: 1.2em;
+    }
 }
 
 @media (max-width: 768px) {
@@ -289,5 +340,89 @@ footer {
     .slide .text {
         left: 10%;
         max-width: 80%;
+    }
+    
+    .text-presentation {
+        font-size: 1em;
+        width: 60%;
+    }
+    
+    .apresentacao-title{
+        font-weight: bolder;
+        font-size: 1.6em;
+    }
+    
+    .apresentacao a{
+        font-size: 0.8em;
+    }
+
+}
+
+/* CSS para telas menores */
+@media (max-width: 540px) {
+    .mission {
+        display: block;
+        padding: 2rem;
+        margin-bottom:100%;
+    }
+    
+    .mission-image {
+        width: 100%;
+        position: relative;
+    }
+    
+    .mission-image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .cards {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 150%;
+        left: 50%;
+        width: 50%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -25px;
+    }
+    
+    .text-mission {
+        padding: 15px;
+        color: var(--cor2);
+        width: 100%;
+        text-align: justify;
+        background-color: white;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.133);
+        margin-top: 2rem;
+        transition: 0.5s;
+    }
+
+    .text-presentation {
+        font-size: 0.8em;
+        width: 70%;
+    }
+}
+
+@media (max-width: 364px) {
+    .text-presentation {
+        font-size: 0.8em;
+        width: 90%;
+    }
+
+    .mission{
+        margin-bottom: 150%;
+    }
+
+    .mission-image{
+        display: none;
+    }
+    .cards {
+        top: 145%;
+        width: 70%;
+        margin-left: -33px;
     }
 }
