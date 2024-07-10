@@ -340,6 +340,44 @@ nav ul li a:hover {
     height: auto; 
 }
 
+.parceiros{
+    background-color: var(--cor3);
+    height: 60vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.parceiros-container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.parceiros-container h2{
+    font-size: 5.5em;
+    color: var(--cor5);
+    margin-top: -15px;
+    margin-bottom: -10px;
+}
+
+.parceiros-flex{
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.parceiros-item{
+    width: 25%;
+}
+
+.parceiros-item img{
+    width: 100%;
+}
+
 
 #portfolio, #contactos {
     padding: 2rem;
@@ -380,6 +418,34 @@ footer {
     .servico-type p{
         font-size: 0.65em;
     }
+
+    .portfolio-item-text p{
+        font-size: 1.1em;
+    }
+    
+    .portfolio-item-text h2{
+        font-size: 4.5em;
+        margin-bottom: -10px;
+    }
+
+    .servicos-first-text h2{
+        font-size: 3.5em;
+        margin-bottom: -10px;
+    }
+
+    .servicos-first-text p{
+        margin-bottom: -50px;
+    }
+
+    .parceiros-container h2{
+        font-size: 4.5em;
+    }
+
+    .apresentacao-title{
+        font-size: 3.5em;
+        margin-bottom: -25px;
+    }
+
 }
 
 @media (max-width: 910px) {
@@ -394,6 +460,34 @@ footer {
     .servicos-ilustracao{
         column-gap: 1.6rem;
     }
+
+    .portfolio-item-text p{
+        font-size: 0.9em;
+    }
+    
+    .portfolio-item-text h2{
+        font-size: 3.5em;
+        margin-bottom: -10px;
+    }
+
+    .servicos-first-text h2{
+        font-size: 2.5em;
+        margin-bottom: -10px;
+    }
+
+    .servicos-first-text p{
+        margin-bottom: -50px;
+    }
+
+    .parceiros-container h2{
+        font-size: 3.5em;
+    }
+
+    .apresentacao-title{
+        font-size: 2.5em;
+        margin-bottom: -25px;
+    }
+
 }
 
 @media (max-width: 982px) {
@@ -410,6 +504,15 @@ footer {
 }
 
 @media (max-width:780px){
+
+    .servicos-first-text h2{
+        margin-bottom: -10px;
+    }
+
+    .servicos-first-text p{
+        margin-bottom: 10px;
+    }
+
     .cards{
         font-size: 0.57em;
     }
@@ -515,6 +618,32 @@ footer {
         font-size: 1em;
     }
 
+    .portfolio-item-text p{
+        font-size: 0.9em;
+    }
+    
+    .portfolio-item-text h2{
+        font-size: 2.5em;
+        margin-bottom: -10px;
+    }
+
+    .servicos-first-text h2{
+        font-size: 2.1em;
+    }
+
+    .servicos-first-text p{
+        margin-bottom: -30px;
+    }
+
+    .parceiros-container h2{
+        font-size: 2.5em;
+    }
+
+    .apresentacao-title{
+        font-size: 2.3em;
+        margin-bottom: -25px;
+    }
+
 }
 
 @media (max-width:690px){
@@ -539,11 +668,28 @@ footer {
     .servicos-first-text h2{
         margin-bottom: -12px;
     }
-
-    .servicos-first-text h2{
-        margin-top: -2px;
+    
+    .portfolio-item-text p{
+        font-size: 0.8em;
     }
     
+    .portfolio-item-text h2{
+        font-size: 2em;
+        margin-bottom: -10px;
+    }
+
+    .servicos-first-text h2{
+        font-size: 2em;
+    }
+
+    .servicos-first-text p{
+        margin-bottom: -30px;
+        font-size: 1em;
+    }
+
+    .parceiros-container h2{
+        font-size: 2em;
+    }
 
 }
 
@@ -598,6 +744,29 @@ footer {
     .apresentacao a{
         font-size: 0.8em;
     }
+
+    .portfolio-item-text p{
+        font-size: 0.68em;
+    }
+    
+    .portfolio-item-text h2{
+        font-size: 1.6em;
+    }
+
+    .servicos-first-text h2{
+        font-size: 1.6em;
+    }
+
+    .servicos-first-text p{
+        margin-bottom: -20px;
+        font-size: 0.8em;
+    }
+
+    .parceiros-container h2{
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+
 }
 
 @media (max-width: 364px) {
