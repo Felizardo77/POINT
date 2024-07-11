@@ -433,10 +433,6 @@ footer {
         margin-bottom: -10px;
     }
 
-    .servicos-first-text p{
-        margin-bottom: -50px;
-    }
-
     .parceiros-container h2{
         font-size: 4.5em;
     }
@@ -473,10 +469,6 @@ footer {
     .servicos-first-text h2{
         font-size: 2.5em;
         margin-bottom: -10px;
-    }
-
-    .servicos-first-text p{
-        margin-bottom: -50px;
     }
 
     .parceiros-container h2{
@@ -631,10 +623,6 @@ footer {
         font-size: 2.1em;
     }
 
-    .servicos-first-text p{
-        margin-bottom: -30px;
-    }
-
     .parceiros-container h2{
         font-size: 2.5em;
     }
@@ -657,7 +645,7 @@ footer {
     }
 
     .servico-type p{
-        margin-top: -15px;
+        margin-top: -10px;
         font-size: 0.5em;
     }
 
@@ -683,7 +671,6 @@ footer {
     }
 
     .servicos-first-text p{
-        margin-bottom: -30px;
         font-size: 1em;
     }
 
@@ -716,13 +703,14 @@ footer {
         transform: translate(-50%, -50%);
         top: 150%;
         left: 50%;
-        width: 50%;
+        width: fit-content;
         z-index: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: -25px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .text-mission {
@@ -734,6 +722,8 @@ footer {
         box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.133);
         margin-top: 2rem;
         transition: 0.5s;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .text-presentation {
@@ -767,6 +757,57 @@ footer {
         margin-bottom: 10px;
     }
 
+}
+
+@media (max-width: 445px) {
+
+    .portfolio-item-text p{
+        font-size: 0.6em;
+        text-align: justify;
+    }
+    
+    .portfolio-item-text h2{
+        font-size: 1.2em;
+    }
+
+    .servicos-first-text h2{
+        font-size: 1.2em;
+    }
+
+    .servicos-first-text p{
+        margin-bottom: -20px;
+        font-size: 0.7em;
+    }
+
+    .parceiros-container h2{
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 436px) {
+    .portfolio-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portfolio-item-imagem {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .portfolio-item-text {
+        width: 100%;
+    }
+
+    .portfolio-item-imagem img {
+        max-width: 100%;
+    }
+    
+    .portfolio-item-text h2{
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: 364px) {
@@ -804,20 +845,71 @@ footer {
         font-size: 0.47em;
     }
 
+    .cards {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 150%;
+        left: 50%;
+        width: fit-content;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -50px;
+    }
+
+    .text-mission {
+        padding: 15px;
+        color: var(--cor2);
+        width: 100%;
+        text-align: justify;
+        background-color: white;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.133);
+        margin-top: 2rem;
+        transition: 0.5s;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .mission-text{
+        font-size: 1em;
+    }
+
+    .cards{
+        width: 80%;
+    }
+
 }
 
-@media (max-width: 260px) {
+
+
+@media (max-width: 275px) {
     .text-presentation {
         font-size: 0.68em;
         width: 90%;
+    }
+
+    .apresentacao-title{
+        font-size: 2em;
+        margin-bottom: 2px;
     }
 
     .mission{
         margin-bottom:170%;
     }
 
+    .cards{
+        width: 80%;
+    }
+
     .mission-text{
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
 
 
