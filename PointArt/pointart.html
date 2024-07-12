@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,8 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../Media/images/favicon-32x32.png" type="image/x-icon">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
-
 <body>
     <header>
         <nav>
@@ -20,7 +22,7 @@
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="#contactos">Contactos</a></li>
-            </ul>
+            </ul>            
         </nav>
         <div id="nav-popup" class="nav-popup">
             <ul>
@@ -32,18 +34,16 @@
         </div>
     </header>
     <main>
-        <section class="apresentacao">
+        <section class="apresentacao" data-aos="fade-up" data-aos-once="true">
             <div class="text-presentation">
-                <h1 class="apresentacao-title">Point Art</h1>
-                <p class="apresentacao-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sapiente vel.
-                    Rem maxime, accusamus hic minima ducimus ad quia minus perspiciatis neque nihil eveniet perferendis
-                    vero. Provident totam ea reiciendis.</p>
+                <h1 class="apresentacao-title" data-aos="fade-down" data-aos-once="true">Point Art</h1>
+                <p class="apresentacao-text">A Point Art é uma empresa jovem e de jovens, que tem como objectos de trabalho: Serigrafia, Grafica, confecção de material textil e a Publicidade.</p>
                 <a href="#mission">
                     Explorar
                 </a>
             </div>
         </section>
-        <section class="mission" id="mission">
+        <section class="mission" id="mission" data-aos="fade-up" data-aos-once="true">
             <section class="mission-image">
                 <img src="../Media/images/missionBanner.png" alt="Mission Image">
             </section>
@@ -59,9 +59,18 @@
                         nossos serviços e produtos fazem para o mercado, em particular para os nossos clientes, e
                         transformar essa diferença em nosso sucesso.</p>
                 </section>
+                <section class="text-mission">
+                    <h2>Valores</h2>
+                    <p class="mission-text">- Qualidade<br>
+                    - Eficiência<br>
+                    - Eficácia<br>
+                    - Responsabilidade<br>
+                    - Criatividade e dinamismo<br>
+                    - Profissionalismo</p>
+                </section>
             </section>
         </section>
-        <section class="servicos">
+        <section class="servicos" id="servicos" data-aos="fade-left" data-aos-once="true">
             <section class="servico-container">
                 <section class="servicos-first-text">
                     <p>Conheça os</p>
@@ -96,18 +105,18 @@
                 </section>
             </section>
         </section>
-        <section class="portfolio" id="#portfolio">
+        <section class="portfolio" id="portfolio">
             <section class="portfolio-container">
                 <section class="portfolio-item">
                     <section class="portfolio-item-text">
                         <h2>Design Gráfico</h2>
                         <p>Nossos designers talentosos trabalham em estreita colaboração com você para capturar a essência da sua marca e comunicar sua mensagem de forma eficaz. Desde a concepção até a entrega final, cada projeto é tratado com a máxima atenção aos detalhes, garantindo que o resultado final não apenas atenda, mas supere suas expectativas. Quer você precise de um design novo e moderno ou de uma reformulação de marca, estamos prontos para transformar suas ideias em obras-primas visuais.</p>
                     </section>
-                    <section class="portfolio-item-imagem">
+                    <section class="portfolio-item-imagem" data-aos="fade-left" data-aos-once="true">
                         <img src="../Media/images/Portfolio/designgrafico.jpeg" alt="">
                     </section>
                 </section>
-                <section class="portfolio-item">
+                <section class="portfolio-item" data-aos="fade-right" data-aos-once="true">
                     <section class="portfolio-item-imagem">
                         <img src="../Media/images/Portfolio/serigrafia.png" alt="">
                     </section>
@@ -117,7 +126,7 @@
                     </section>
                 </section>
                 <section class="portfolio-item">
-                    <section class="portfolio-item-text">
+                    <section class="portfolio-item-text" data-aos="fade-left" data-aos-once="true">
                         <h2>Publicidade</h2>
                         <p>Nossa equipe de especialistas em marketing trabalha para entender profundamente seus objetivos de negócios e criar campanhas personalizadas que ressoem com seus clientes potenciais. Utilizando uma combinação de mídia tradicional e digital, garantimos que sua mensagem chegue ao público certo no momento certo. Desde a criação de conteúdo atraente até a análise de desempenho, estamos com você em cada etapa do caminho para garantir que sua campanha seja um sucesso retumbante.</p>
                     </section>
@@ -126,7 +135,7 @@
                     </section>
                 </section>
                 <section class="portfolio-item">
-                    <section class="portfolio-item-imagem">
+                    <section class="portfolio-item-imagem" data-aos="zoom-in" data-aos-once="true">
                         <img src="../Media/images/Portfolio/confeccoes.png" alt="">
                     </section>
                     <section class="portfolio-item-text">
@@ -162,14 +171,58 @@
             </section>
         </section>
         <section id="contactos">
-            <h2>Contactos</h2>
-            <p>Email: pointart15@gmail.com</p>
-            <p>Telefone: (+258) 87 807 0090 / (+258) 84 272 9094 / (+258) 87 927 2909</p>
+            <section class="contactos-container">
+                <h2>Contactos e Informações</h2>
+                <section class="contactos-itens">
+                    <section class="contacto-item" data-aos="fade-right">
+                        <img src="../Media/images/Icones/envelope24.png" alt="">
+                        <p>Email: pointart15@pointgrupo.com</p>
+                    </section>
+                    <section class="contacto-item" data-aos="fade-up">
+                        <img src="../Media/images/Icones/telefone-circular.png" alt="">
+                        <p>Telefone: (+258) 87 807 0080 / (+258) 84 272 9094 / (+258) 87 927 2909</p>
+                    </section>
+                    <section class="contacto-item">
+                        <img src="../Media/images/Icones/marcador.png" alt="">
+                        <p>Bairro 25 de Junho(Choupal) Maputo - Moçambique</p>
+                    </section>
+                    <section class="contacto-item" data-aos="fade-left">
+                        <img src="../Media/images/Icones/relogio.png" alt="">
+                        <p>Seg - Sex 07:30 - 18:00</p>
+                    </section>
+                </section>
+            </section>
         </section>
     </main>
     <footer>
+        <section class="redes">
+            <section class="redes-container">
+                <section class="rede-social">
+                    <a href="https://www.facebook.com">
+                        <img src="../Media/images/Icones/facebook (1).png" alt="Facebook">
+                    </a>
+                </section>
+                <section class="rede-social">
+                    <a href="https://www.instagram.com">
+                        <img src="../Media/images/Icones/instagram.png" alt="Instagram">
+                    </a>
+                </section>
+                <section class="rede-social">
+                    <a href="https://www.whatsapp.com">
+                        <img src="../Media/images/Icones/whatsapp.png" alt="WhatsApp">
+                    </a>
+                </section>
+            </section>
+        </section>        
         <p>&copy; 2024 Point Art. Todos os direitos reservados.</p>
         <p>Site desenvolvido pela Ikarus Tech, Lda.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500, // duração da animação em milissegundos
+            once: true, // Executa a animação apenas uma vez
+        });
+    </script>
 </body>
 </html>
