@@ -229,19 +229,24 @@ html, body {
 
 .cards{
     width: 50%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
 }
 
 .text-mission {
     padding-left: 2rem;
     padding: 15px;
-    width: 50%;
+    width: 80%;
+    height: fit-content;
     text-align: justify;
     background-color: white;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.133);
     margin-left: 2rem;
     transition: 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
 
 .mission-text{
@@ -259,7 +264,7 @@ html, body {
 }
 
 .text-mission:hover {
-    box-shadow: 0px 0px 8px #27acff80;
+    box-shadow: 0px 0px 12px #27acff80;
 }
 
 .servicos{
@@ -497,6 +502,8 @@ footer {
     .servico-type p{
         font-size: 0.8em;
     }
+
+    
 }
 
 @media (max-width: 1200px) {
@@ -530,6 +537,10 @@ footer {
         font-size: 3.5em;
     }
 
+    .mission-text{
+        font-size: 0.2em;
+    }
+
 }
 
 @media (max-width:1051px) {
@@ -540,9 +551,27 @@ footer {
     .contactos-container h2{
         font-size: 1.5em;
     }
+
+    .text-mission p{
+        font-size: 0.9em;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .servicos-ilustracao{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
 }
 
 @media (max-width: 910px) {
+
+
 
     .contacto-item{
         font-size: 0.54em;
@@ -624,7 +653,7 @@ footer {
     }
 
     .servico-type p{
-        font-size: 0.44em;
+        font-size: 0.7em;
     }
 
     .servicos-ilustracao{
@@ -639,6 +668,10 @@ footer {
 
     .parceiros-item{
         width: 80%;
+    }
+
+    .text-mission p{
+        font-size: 1em;
     }
 
 }
@@ -710,8 +743,8 @@ footer {
     }
     
     .text-presentation {
-        font-size: 1em;
-        width: 60%;
+        font-size: 1.09em;
+        width: 70%;
     }
     
     .apresentacao a{
@@ -763,7 +796,7 @@ footer {
 
     .servico-type p{
         margin-top: -10px;
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
 
     .servico-type{
@@ -846,12 +879,40 @@ footer {
     .cards{
         margin-top: -40px;
     }
+
+    .servico-type p{
+        font-size: 0.56em;
+    }
+
+    .servico-type h2{
+        font-size: 0.8em;
+    }
+
+    .servicos-ilustracao{
+        display: flex;
+    }
+
 }
 
 @media (max-width:590px) {
     .mission-image{
         display: none;
     }
+
+    .cards{
+        width: 90%;
+    }
+
+    .text-mission p{
+        font-size: 1.2em;
+    }
+
+    .mission{
+        background-image: url(../Media/images/missionBanner.png);
+        background-size: cover;
+        background-position: center;
+    }
+
 }
 
 /* CSS para telas menores */
@@ -868,8 +929,7 @@ footer {
     }
 
     .text-presentation {
-        font-size: 0.8em;
-        width: 70%;
+        width: 80%;
     }
 
     .apresentacao a{
@@ -1023,13 +1083,14 @@ footer {
     }
 
     .servico-type p{
-        font-size: 0.47em;
+        font-size: 0.6em;
     }
 
     .cards {
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 170%;
+        top:55%;
+        font-size: 0.5em;
     }
 
     .text-mission {
@@ -1046,6 +1107,11 @@ footer {
 
     footer p{
         font-size: 0.7em;
+    }
+
+    .text-presentation {
+        width: 90%;
+        font-size: 1em;
     }
 
 }
@@ -1083,6 +1149,7 @@ footer {
     }
 
     .servico-type p{
-        font-size: 0.41em;
+        font-size: 0.5em;
     }
+
 }
