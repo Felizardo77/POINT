@@ -985,7 +985,7 @@ footer {
 @media (max-width: 445px) {
 
     .portfolio-item-text p{
-        font-size: 0.6em;
+        font-size: 0.8em;
         text-align: justify;
     }
     
@@ -1114,6 +1114,15 @@ footer {
         font-size: 1em;
     }
 
+    .portfolio-item-text p{
+        font-size: 0.65em;
+    }
+
+    .portfolio-container{
+        width: 95%;
+    }
+
+
 }
 
 
@@ -1150,6 +1159,10 @@ footer {
 
     .servico-type p{
         font-size: 0.5em;
+    }
+
+    .portfolio-item-text p{
+        font-size: 0.6em;
     }
 
 }
