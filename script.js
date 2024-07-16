@@ -1,3 +1,12 @@
+// Esperar até que a janela seja completamente carregada
+window.addEventListener('load', function() {
+    // Ocultar o preloader
+    document.getElementById('preloader').style.display = 'none';
+    // Mostrar o conteúdo principal
+    document.getElementById('content').classList.remove('hidden');
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const pointGroups = document.querySelectorAll('.pointGroup');
     
