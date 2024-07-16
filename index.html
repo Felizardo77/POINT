@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Media/images/favicon-32x32 - 2.png" type="image/x-icon">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 
 <body>
@@ -77,14 +78,14 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </section>
         <section id="servicos">
-            <h2 id="ourServices">Nossos Serviços</h2>
+            <h2 id="ourServices" data-aos="zoom-out">Nossos Serviços</h2>
             <section class="servico-container">
                 <section class="servico-text">
-                    <section class="servico-item">
+                    <section class="servico-item" data-aos="fade-down">
                         <h3 class="titles">Assessoria e Consultoria</h3>
                         <p>Contabilidade, auditoria, recursos humanos, importação e exportação, logística.</p>
                     </section>
-                    <section class="servico-item""">
+                    <section class="servico-item"   data-aos="fade-up">
                         <h3 class="titles">Projetos de Investimento</h3>
                         <p>Investimento em diversos projetos, como Point Art, Nota Mill e Móveis e Imóveis.</p>
                     </section>
@@ -120,7 +121,7 @@
         <section id="sobre-nos">
             <h3 class="titles">Empresas do Grupo</h3>
             <div class="cards-container">
-                <div id="pArt" class="card">
+                <div id="pArt" class="card" data-aos="fade-right">
                     <img src="Media/images/pointartLogo.png" alt="Point Art Logo" class="card-logo">
                     <h4>Point Art</h4>
                     <p>Especializada em gráfica, serigrafia e confecções.</p>
@@ -130,7 +131,7 @@
                         <a href="PointArt/pointart.html" class="btn btn-primary">Saiba Mais</a>
                     </div>
                 </div>
-                <div id="nMil" class="card">
+                <div id="nMil" class="card" data-aos="zoom-in">
                     <img src="Media/images/notaMil.jpeg" alt="Nota Mill Logo" class="card-logo">
                     <h4>Nota Mill</h4>
                     <p>Focada em investimentos diversos.</p>
@@ -139,7 +140,7 @@
                         <a href="#notamill" class="btn btn-warning">Saiba Mais</a>
                     </div>
                 </div>
-                <div id="mImov" class="card">
+                <div id="mImov" class="card" data-aos="fade-left">
                     <img src="Media/images/moveisImoveis.jpeg" alt="Móveis e Imóveis Logo" class="card-logo">
                     <h4>Móveis e Imóveis</h4>
                     <p>Atua no mercado de móveis e imóveis.</p>
@@ -151,20 +152,47 @@
             </div>
         </section>
         <section class="extra">
-            <section class="extra-text">
+            <section class="extra-text" data-aos="fade-left">
                 <p>Nosso compromisso é conectar o futuro dos nossos clientes às melhores oportunidades do mercado,
                     promovendo um ambiente de negócios próspero e sustentável.</p>
             </section>
         </section>
         <section id="contactos">
-            <h2 class="titles">Contactos</h2>
-            <p>Email: info@pointgrupo.com</p>
-            <p>Telefone: (00) 1234-5678</p>
+            <section class="contactos-container">
+                <h2>Contactos e Informações</h2>
+                <br>
+                <section class="contactos-itens">
+                    <section class="contacto-item" data-aos="fade-right">
+                        <img src="../Media/images/Icones/envelope24.png" alt="">
+                        <p>Email: info@pointgrupo.com</p>
+                    </section>
+                    <section class="contacto-item" data-aos="fade-up">
+                        <img src="../Media/images/Icones/telefone-circular.png" alt="">
+                        <p>Telefone: (+258) 87 807 0080 / (+258) 84 272 9094 / (+258) 87 927 2909</p>
+                    </section>
+                    <section class="contacto-item">
+                        <img src="../Media/images/Icones/marcador.png" alt="">
+                        <p>Bairro 25 de Junho(Choupal) Maputo - Moçambique</p>
+                    </section>
+                    <section class="contacto-item" data-aos="fade-left">
+                        <img src="../Media/images/Icones/relogio.png" alt="">
+                        <p>Seg - Sex 07:30 - 18:00</p>
+                    </section>
+                </section>
+            </section>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Point Grupo. Todos os direitos reservados.</p>
+        <p>&Alpha;Site desenvolvido pela Ikarus Tech, Lda.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1800, // duração da animação em milissegundos
+            once: true, // Executa a animação apenas uma vez
+        });
+    </script>
 </body>
 
 </html>

@@ -64,7 +64,7 @@
 }
 
 * {
-    --cor1: #165F8C;
+    --cor1: hsl(203, 73%, 32%);
     --cor2: #105773;
     --cor3: #9DBF21;
     --cor4: #C1D96C;
@@ -194,6 +194,19 @@ main {
     margin: 0;
     padding: 0;
 }
+
+html, body {
+    overflow-x: hidden; /* Para garantir que não há scrolling horizontal */
+}
+
+#slideshow, #servicos {
+    height: 100vh; /* Garante que essas seções ocupem exatamente a altura da janela */
+}
+
+#slideshow, #servicos, .mission, .extra-text, .extra, footer {
+    overflow: hidden; /* Impede que qualquer conteúdo nessas seções cause overflow */
+}
+
 
 #slideshow {
     position: relative;
@@ -427,20 +440,17 @@ footer {
     font-size: 1.2rem;
     text-align: justify;
     color: var(--cor2);
-    padding: 20px;
 }
 
 .point-item h2{
-    background-color: var(--cor5);
     color: var(--cor1);
-    padding: 10px;
-    border-radius: 10px;
 }
 
 #sobre-nos {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
 }
 
 #sobre-nos h3{
@@ -549,12 +559,53 @@ footer {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    color: #333;
-    padding-top: 7.5rem;
-    margin-top: 60px;
+    color: var(--cor1);
+    padding-top: 8rem;
     font-weight: bold;
 }
 
+#portfolio, #contactos {
+    padding: 2rem;
+    text-align: center;
+}
+
+#contactos .contactos-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    color: var(--cor2);
+}
+
+#contactos h2{
+    font-weight: bold;
+}
+
+#contactos .contactos-itens {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#contactos .contacto-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+#contactos .contacto-item img {
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    width: 24px; /* Largura da imagem */
+    height: 24px; /* Altura da imagem */
+}
+
+#contactos .contacto-item p {
+    margin: 0;
+}
+
+.contacto-item{
+    font-size: 0.8em;
+}
 
 .parallax {
     background-attachment: fixed;
@@ -644,11 +695,23 @@ footer {
     transform: translateY(0);
 }
 
+@media (max-width: 1300px) {
+    .extra-text{
+        margin-top: auto;
+        margin-bottom: auto;
+        position: relative;
+        top: -2%;
+    }
 
-
-@media (max-width: 1002px) {
+    .extra-text p{
+        font-size: 0.9em;
+    }
 
     
+}
+
+
+@media (max-width: 1051px) {
     .pointGroup #pointGroup-h2 {
         font-size: 2.5em;
     }
@@ -659,6 +722,58 @@ footer {
     
     .pointGroup #textPoint3 { 
         font-size: 1em;
+    }
+
+    .contacto-item p{
+        font-size: 0.86em;
+    }
+
+}
+
+
+@media (max-width: 1002px) {
+
+    .servico-text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .servico-item{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .servico-text h3{
+        font-size: 1em;
+    }
+
+    .servico-text p{
+        font-size: 0.8em;
+    }
+
+}
+
+@media (max-width:968px) {
+    
+    .pointGroup .textPoint {
+        font-size:0.9em;
+    }
+    
+    .point-item h2{ 
+        font-size: 1.3em;
+    }
+
+    .pointGroup{
+        height: 70vh;
+    }
+    
+    #contactos .contactos-itens {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
     }
 
 }
@@ -689,18 +804,6 @@ footer {
         font-size: 0.5em;
     }
     
-    .pointGroup #pointGroup-h2 {
-        font-size: 2.1em;
-    }
-    
-    .pointGroup .textPoint {
-        font-size:0.9em;
-    }
-    
-    .pointGroup #textPoint3 { 
-        font-size: 0.9em;
-    }
-
 }
 
 
@@ -733,7 +836,7 @@ footer {
 
     #servicos {
         height: auto;
-        padding: 2rem 1rem;
+        padding: 2rem 0rem;
         font-size: 1em;
     }
 
@@ -768,23 +871,20 @@ footer {
         left: 10%;
         max-width: 80%;
     }
+
+    .extra-text{
+        width: 55%;
+    }
+
+    .extra-text p{
+        font-size: 0.7em;
+    }
+
 }
 
 
 
 @media (max-width: 771px) {
-
-    .pointGroup #pointGroup-h2 {
-        font-size: 2.1em;
-    }
-    
-    .pointGroup .textPoint {
-        font-size:0.9em;
-    }
-    
-    .pointGroup #textPoint3 { 
-        font-size: 0.9em;
-    }
     
     .slide .text {
         font-size: 1.1rem;
@@ -820,10 +920,60 @@ footer {
     
     .servico-text {
         font-size: 1em;
-        margin-left: 15px;
     }
     
+
+    .servico-item{
+        width: 80%;
+    }
     
+    .pointGroup .textPoint {
+        font-size:0.78em;
+    }
+    
+
+    
+}
+
+@media (max-width:627px) {
+
+    .pointGroup{
+        height: fit-content;
+    }
+
+    .pointGroup-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .point-item{
+        width: 100%;
+        margin-top: 0.1rem;
+    }
+    
+    .point-item h2{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    .point-item p{
+        font-size: 1.2rem;
+        text-align: justify;
+        color: var(--cor2);
+    }
+    
+    .point-item h2{
+        color: var(--cor1);
+    }
+
+    #sobre-nos h3{
+        font-size: 1.3rem;
+    }
+
+    #contactos h2{
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 608px) {
@@ -909,12 +1059,28 @@ footer {
     }
     
     .servico-text {
-        font-size: 0.7em;
-        margin-left: 15px;
+        font-size: 0.9em;
+    }
+
+    .servico-text h3{
+        font-size: 0.98em;
+    }
+
+    footer p{
+        font-size: 0.8em;
     }
 }
 
 @media (max-width:490px) {
+
+    
+
+    #contactos .contactos-itens {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+
     .pointGroup #pointGroup-h2 {
         font-size: 1.7em;
     }
@@ -930,39 +1096,66 @@ footer {
     .servico-video video {
         border-radius: 20px 0px 0px 20px;
     }
+
+    .extra-text{
+        width: 70%;
+    }
+
+    .extra-text p{
+        font-size: 0.65em;
+    }
 }
 
 @media (max-width:425px) {
-    .pointGroup #pointGroup-h2 {
+    .pointGroup h2 {
         font-size: 1.4em;
-        padding: 10px;
+        padding: 0px;
     }
         
     .pointGroup .textPoint {
-        font-size:0.61em;
-        padding: 10px;
+        padding: 0px;
     }
         
-    .pointGroup #textPoint3 { 
-        font-size: 0.61em;
+    .servico-item{
+        width: 100%;
+    }
+
+    .servico-text h2{
+        font-size: 0.8em;
+    }
+
+    .servico-text p{
+        font-size: 0.75em;
     }
 }
 
 @media (max-width:330px) {
-    .pointGroup #pointGroup-h2 {
+
+
+    .extra-text{
+        width: 80%;
+    }
+
+    .extra-text p{
+        font-size: 0.65em;
+    }
+
+    .servico-text h2{
+        font-size: 0.75em;
+    }
+
+    .servico-text p{
+        font-size: 0.7em;
+    }
+
+    .pointGroup h2 {
         font-size: 1.2em;
-        padding: 10px;
     }
         
     .pointGroup .textPoint {
-        font-size:0.55em;
-        padding: 10px;
+        font-size:0.65em;
     }
         
-    .pointGroup #textPoint3 { 
-        font-size: 0.55em;
-    }
-    
     .text.marketing h2 {
         font-size: 0.95em;
     }
@@ -978,34 +1171,19 @@ footer {
 }
 
 @media (max-width:290px) {
-    .pointGroup #pointGroup-h2 {
-        margin-top: -25px;
-        font-size: 1em;
-        padding: 5px;
-    }
         
     .pointGroup .textPoint {
-        font-size:0.52em;
-        padding: 5px;
+        font-size:0.6em;
     }
         
-    .pointGroup #textPoint3 { 
-        font-size: 0.53em;
-    }
 }
 
 @media (max-width:245px) {
-    .pointGroup #pointGroup-h2 {
-        font-size: 0.7em;
-    }
         
     .pointGroup .textPoint {
-        font-size:0.48em;
+        font-size:0.58em;
     }
         
-    .pointGroup #textPoint3 { 
-        font-size: 0.48em;
-    }
 }
 
 
